@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>intro</title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <img src="<%= asset_path @main %>" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col my-auto">
+                    <form action="/index" method="get">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">이름을 입력하세요</label>
+                        <input type="text" class="form-control" name="user_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name">
+                        <small id="emailHelp" class="form-text text-muted">신이 너를 만들때</small>
+                      </div>
+                      <button type="submit" class="btn btn-primary">확인하기!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>index</title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-inverse p-4">
+              <h4 class="text-white">신이 너를 만들때</h4>
+              <span class="text-muted">제작자 : 멋사 인천대 5기 황보협</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-inverse bg-inverse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+        
+        <div class="container" mt-5>
+            <h1 class="mt-5">신이 <span class="text-primary font-weight-bold"><%=@user_name%></span>를 만들때</h1>
+            <div class="row mt-5">
+                <div class="col">
+                  <img src="<%= asset_path @first %>" />
+                </div>
+                <div class="col">
+                  <img src="<%= asset_path @second %>" />
+                </div>
+                <div class="col">
+                  <img src="<%= asset_path @third %>" />
+                </div>
+            </div>
+              
+            <div class="row mt-5">
+                <div class="col">
+                  <p class="text-center">먼저 <span class="text-primary font-weight-bold"><%=@choice_types[0]%></span>을 조금 넣고</p>
+                </div>
+                <div class="col">
+                  <p class="text-center"><span class="text-success font-weight-bold"><%=@choice_types[1]%></span>도 세스푼</li></p>
+                </div>
+                <div class="col">
+                  <p class="text-center">마지막으로 <span class="text-danger font-weight-bold"><%=@choice_types[2]%></span> 을 넣으아앙ㄱ</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</hmtl>
